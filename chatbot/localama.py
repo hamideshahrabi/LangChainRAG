@@ -1,3 +1,4 @@
+# 2
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -30,4 +31,5 @@ output_parser=StrOutputParser()
 chain=prompt|llm|output_parser
 
 if input_text:
+
     st.write(chain.invoke({"question":input_text}))
