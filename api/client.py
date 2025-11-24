@@ -1,3 +1,4 @@
+#4
 import requests
 import streamlit as st
 
@@ -25,3 +26,4 @@ if input_text:
 
 if input_text1:
     st.write(get_ollama_response(input_text1))
+
