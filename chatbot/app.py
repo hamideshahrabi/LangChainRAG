@@ -3,7 +3,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-import streamlit as st
+import streamlit as st   
 import os
 from dotenv import load_dotenv
 
@@ -34,4 +34,5 @@ chain=prompt|llm|output_parser
 if input_text:
 
     st.write(chain.invoke({'question':input_text}))
+
 
