@@ -10,7 +10,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 
 from dotenv import load_dotenv
-
+ 
 load_dotenv()
 
 ## load the GROQ And OpenAI API KEY 
@@ -75,6 +75,7 @@ if prompt1:
         for i, doc in enumerate(response["context"]):
             st.write(doc.page_content)
             st.write("--------------------------------")
+
 
 
 
