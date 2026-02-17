@@ -11,7 +11,7 @@ from langchain_community.vectorstores import FAISS
 import time
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv()     
 
 ## load the Groq API key
 groq_api_key=os.environ['GROQ_API_KEY']
@@ -59,3 +59,4 @@ if prompt:
             st.write(doc.page_content)
             st.write("--------------------------------")
     
+
